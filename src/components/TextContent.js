@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 
 export default function TextContent(props) {
-    // const [text,setText]=useState("Hey everyone!!");
+
     /*
 
 Function :
@@ -19,40 +19,15 @@ add event on button  :
     const [text, setText] = useState("");
     const [fWord, findWord] = useState("");
     const [rWord, replaceWord] = useState("");
-    // const [myStyle,setMystyle]=useState({
-    //     color:"black",
-    //     backgroundColor:"white",
-    //     border:"2px solid black",
-    //     width:"100vw"
-    // })
-    // const [toggleButtonText,setToggleButtonText]=useState('Enable Dark Mode')
-    // const toggleMode=()=>{
-    //     if(myStyle.color==="black"){
-    //     setMystyle({
-    //         color:"white",
-    //         backgroundColor:"black",
-    //         border:"2px solid white"
-    //     })
-    //     setToggleButtonText('Enable Light Mode');
-    // }
-    // else{
-    //     setMystyle({
-    //         color:"black",
-    //         backgroundColor:"white",
-    //         border:"2px solid black",
-    //     })
-    //     setToggleButtonText('Enable Dark Mode');
 
-    // }
-    // }
     const handlefindChange = (event) => {
         findWord(event.target.value);
-        // console.log(findWord(event.target.value));
+
 
     };
     const handleReplaceChange = (event) => {
         replaceWord(event.target.value)
-        // console.log(event.target.value);
+
     };
     const handleReplaceClick = () => {
         let newText = text.replaceAll(fWord, rWord);
@@ -97,13 +72,12 @@ add event on button  :
     }
     const noOfWords = () => {
 
-        // let arr;
-        // if(text!=undefined)
+
         let arr = text.split(' ');
         let length = text.split(' ').length;
         arr.forEach(element => {
             if (element === '') {
-                // console.log('inside space ');
+
                 length--;
             }
         });
@@ -133,7 +107,7 @@ add event on button  :
                 <textarea className="form-control  my-3" value={fWord} style={{ width: 'auto' }} onChange={handlefindChange} rows="1" placeholder='Search'></textarea>
                 <textarea className="form-control  my-1" value={rWord} style={{ display: 'inline-block', width: 'auto' }} onChange={handleReplaceChange} rows="1" placeholder='Replace'></textarea>
                 <button className="btn btn-primary mx-1 my-1" onClick={handleReplaceClick} style={{ display: 'block' }}>Replace All</button>
-                {/* <button className="btn btn-primary mx-1 my-1" onClick={toggleMode} >{toggleButtonText}</button> */}
+
             </div>
             <div className="container text-infor" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
                 <hr />

@@ -1,20 +1,15 @@
 
 import { useState } from 'react';
-import './App.css';
-import Navbar from './components/Navbar'
-import TextContent from './components/TextContent'
-import Alert from './components/Alert';
-import About from './components/About';
 import {
-  BrowserRouter,
-  Switch,
-  Routes,
-  Route,
-  Link
+  BrowserRouter as Router,Route, Switch
 } from "react-router-dom";
+import './App.css';
+import About from './components/About';
+import Alert from './components/Alert';
+import Navbar from './components/Navbar';
+import TextContent from './components/TextContent';
 function App() {
   const [alert, setalert] = useState(null);
-  // in order to show alert just call show alert function it will take care of setalert
   const showAlert = (message, type) => {
     setalert({
       msg: message,
@@ -41,6 +36,7 @@ function App() {
     <>
       <Navbar title="TextAnalyzer" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
+      <Router>
       <Switch>
         <Route exact path="/">
       <TextContent mode={mode} showAlert={showAlert} />
@@ -50,11 +46,11 @@ function App() {
           <About />
           </Route>
       </Switch>
+      </Router>
     </>
   );
 }
 
 export default App;
-// OR
-// export default function App() krke start kr skte ho
+
 

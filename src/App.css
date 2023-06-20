@@ -2,10 +2,11 @@
   background-image: url('components/th.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  
+
 } */
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -48,13 +49,13 @@
 #exampleFormControlTextarea1{
   font-weight: 500;
   border: 1px solid black;
-  
+
 }
 .text-styling{
   font-family: Georgia, 'Times New Roman', Times, serif;
   border-bottom: 2px solid black;
   display: inline-block;
-  
+
 }
 .text-styling::after{
   content: " :- ";
