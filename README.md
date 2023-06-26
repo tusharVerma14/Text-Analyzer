@@ -8,7 +8,11 @@
 
 
 
-https://github.com/tusharVerma14/Text-Analyzer/assets/103408768/cd71a515-2f1f-4163-9c37-5de621b773bb
+
+
+
+https://github.com/tusharVerma14/Text-Analyzer/assets/103408768/53d7704d-cc90-42af-b949-314e17685834
+
 
 
 # Getting Started with Create React App
