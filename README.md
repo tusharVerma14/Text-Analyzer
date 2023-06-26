@@ -1,3 +1,16 @@
+
+
+<h2>About The Project</h2>
+• Created a text analyzer website for text conversion and analysis.<br>
+• Additional features include Voice reading and Word count.
+
+## Below is The Sample Video Of the Project:-
+
+
+
+https://github.com/tusharVerma14/Text-Analyzer/assets/103408768/cd71a515-2f1f-4163-9c37-5de621b773bb
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -8,7 +21,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
